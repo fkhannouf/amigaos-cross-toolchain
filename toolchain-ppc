@@ -202,6 +202,7 @@ def build():
               '--with-isl={host}',
               '--with-cloog={host}',
               '--enable-languages=c,c++',
+              '--enable-threads=single',
               '--enable-haifa',
               '--enable-sjlj-exceptions',
               '--disable-libstdcxx-pch',
