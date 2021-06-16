@@ -198,7 +198,7 @@ def build():
               '--target={target}',
               '--enable-languages=c,c++',
               '--enable-haifa',
-              '--enable-sjlj-exceptions'
+              '--enable-sjlj-exceptions',
               from_dir='{archives}/{gcc}')
   make('{gcc}')
   make('{gcc}', 'install')
