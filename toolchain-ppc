@@ -196,17 +196,9 @@ def build():
     configure('{gcc}',
               '--prefix={prefix}',
               '--target={target}',
-              '--with-bugurl="http://sf.net/p/adtools"',
-              '--with-gmp={host}',
-              '--with-mpfr={host}',
-              '--with-isl={host}',
-              '--with-cloog={host}',
               '--enable-languages=c,c++',
-              '--enable-threads=single',
               '--enable-haifa',
-              '--enable-sjlj-exceptions',
-              '--disable-libstdcxx-pch',
-              '--disable-tls',
+              '--enable-sjlj-exceptions'
               from_dir='{archives}/{gcc}')
   make('{gcc}')
   make('{gcc}', 'install')
